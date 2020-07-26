@@ -1,0 +1,86 @@
+// main: ../style.less
+
+.services_content{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.services_item{
+    flex-basis: 33.3333%;
+    padding: 10px;
+
+
+    @media @tablet{
+        flex-basis: 50%;
+    }
+    @media @mobile-L{
+        flex-basis: 100%;
+    }
+}
+.item_content{
+    position: relative;
+    padding: 20px;
+    height: 100%;
+
+    border-radius: 36px;
+    background-color:@color-white;
+    box-shadow: 0px 10px 10px rgba(126, 118, 249, 0.1);
+
+    transition: box-shadow .2s linear;
+
+
+    &:hover{
+        box-shadow: 0px 10px 20px rgba(126, 118, 249, 0.5);
+    }
+    &:active{
+        box-shadow: 0px 10px 20px rgba(126, 118, 249, 0.8);
+    }
+}
+
+.item_image{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 37px;
+
+
+    @media @mobile-M{
+        margin-bottom: 20px;
+    }
+}
+
+.item_title{
+    margin-bottom: 30px;
+
+    @media @mobile-M{
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+}
+
+.item_text{
+    font-size: 12px;
+    margin-bottom: 60px;
+
+
+    @media @mobile-M{
+        font-size: 10px;
+        margin-bottom: 40px;
+    }
+}
+
+.btn_item{
+    position: absolute;
+    bottom: 20px; 
+    right: 20px;
+
+  
+   & button{
+        font-size: 10px;
+   }
+
+
+   @media @mobile-L{
+        text-align: center;
+    }
+}

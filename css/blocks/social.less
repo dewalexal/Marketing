@@ -1,0 +1,36 @@
+// main: ../style.less
+
+.social_item{
+  position: absolute;
+  left: 90px;
+  top:415px;
+  
+
+  @media @laptop{
+    left: 40px;
+    top: 370px;
+  }
+  @media @tablet{
+    left: 30px;
+    top: 300px;
+  }
+  @media @mobile-L{
+    top: 150px;
+  }
+  @media @mobile-M{
+    top: 70px;
+  }
+}
+.social_img{
+  padding-bottom: 43px;
+    
+  transition: transform .3s ease-in-out;
+      &:hover{
+        transform: scale(1.5);
+      }
+
+
+  @media @laptop{
+    padding-bottom: 35px;
+  }
+}

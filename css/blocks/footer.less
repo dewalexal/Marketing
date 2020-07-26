@@ -1,0 +1,77 @@
+// main: ../style.less
+
+.footer_content{
+    display: flex;
+    justify-content: space-evenly;
+    color: @color-white;
+}
+
+.footer_social{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.footer_social_item{
+    transition: transform .3s ease-in-out;
+    &:hover{
+        transform: scale(1.5);
+    }
+
+
+    @media @mobile-L{
+        padding: 10px;
+    }
+    @media @mobile-M{
+        padding: 5px;
+    }
+}
+
+.footer_table{
+    display: flex;
+    justify-content: 33.3333%;
+}
+
+.footer_col{
+    margin-right: 140px;
+
+
+    &.footer_col:last-child{
+        margin-right: 0;
+    }
+
+
+    @media @laptop{
+        margin-right: 100px;
+    }
+    @media @tablet{
+        margin-right: 40px;
+    }
+}
+
+.footer_title{
+    text-align: center;
+    font-size: 50px;
+
+
+    @media @tablet{
+        font-size: 40px;
+    }
+    @media @mobile-L{
+        display: none;
+    }
+}
+
+.footer_topic{
+    margin-bottom: 25px;
+
+    font-weight: 400;
+    font-size: 30px;
+
+
+    @media @tablet{
+        font-size: 22px;
+    }
+    @media @mobile-L{
+        display: none;
+    }
+}

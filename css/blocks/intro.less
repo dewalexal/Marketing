@@ -1,0 +1,64 @@
+// main: ../style.less
+
+.intro{
+    margin-bottom: 300px;
+
+
+    @media @tablet{
+        margin-bottom: 200px;
+    }
+    @media @mobile-L{
+        margin-bottom: 100px;
+    }
+    @media @mobile-M{
+        margin-bottom: 60px;
+    }
+}
+
+.intro_block{ 
+    display: flex;
+}
+
+.intro_content{
+    padding-top: 140px;
+    padding-left: 50px;
+    width:55%;
+
+    text-transform: uppercase;
+
+
+    @media @laptop{
+        width: 50%;
+        padding-top: 100px;
+    }
+    @media @mobile-L{
+        width: 100%;
+        padding-top: 60px;
+    }
+    @media @mobile-M{
+        padding-top: 30px;
+    }
+}
+
+.btn_intro{
+    margin-top: 20px;
+}
+
+.intro_img{
+    position: absolute;
+    right: 0;
+    z-index: 1;
+
+
+    @media @laptop{
+        transform: scale(0.9);
+    }
+    @media @tablet{
+        top: 3%;
+        right: -20%;
+        transform: scale(0.7);
+    }
+    @media @mobile-L{
+        display: none;
+    }
+}

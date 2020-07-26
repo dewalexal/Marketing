@@ -1,0 +1,61 @@
+// compress: true
+
+html{
+    font-size: 16px;
+    background: url("../img/bg_top.svg") no-repeat 100% 0;
+
+
+    @media @tablet{
+        background-size: 95%;
+    }
+}
+
+body{
+    width: 100%;
+    margin: 0;
+    
+    font-family: poppins;
+    color: @color-gray;
+    background-color: @color-white;
+    background: url("../img/test.svg") no-repeat 100% 100%;
+
+
+    @media @mobile-L{
+        background-size: 800px;
+    }
+    @media @mobile-M{
+        background-size: 700px;
+    }
+}
+
+a{
+    text-decoration: none;
+    color: @color-white;
+}
+
+*,
+*:before,
+*:after{
+    box-sizing: border-box;
+}
+
+p{
+    margin: 0;
+    padding: 0;
+}
+
+@import "blocks/container";
+@import "blocks/header";
+@import "blocks/nav";
+@import "blocks/intro";
+@import "blocks/title";
+@import "blocks/btn";
+@import "blocks/social";
+@import "blocks/bio";
+@import "blocks/services";
+@import "blocks/item";
+@import "blocks/pricing";
+@import "blocks/feedback";
+@import "blocks/footer";
+@import "blocks/table";
+@import "blocks/vars";

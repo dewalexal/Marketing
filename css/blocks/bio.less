@@ -1,0 +1,112 @@
+//main: ../style.less
+.biography{
+    background: url("../img/biography/background.svg") no-repeat 100% 0%;
+    margin-bottom: 120px;
+
+
+    @media @laptop{
+        margin-bottom: 70px;
+    }
+    @media @mobile-L{
+        margin-bottom: 60px;
+    }
+}
+
+.bio_block{
+    display: flex;
+
+    @media @mobile-L{
+        display: block;
+    }
+}
+
+.bio_img{
+    width: 50%;
+
+
+    & img{
+        width: 100%;
+    }
+    @media @laptop{
+        transform: scale(0.9);
+    }
+    @media @mobile-L{
+        width: 100%;
+    }
+    @media @mobile-M{
+        transform: scale(0.8);
+    }
+}
+
+.bio_content{
+    justify-content: right;
+    width: 50%;
+    padding-left: 40px;
+
+
+    @media @laptop{
+        margin-top: 40px;
+    }
+    @media @tablet{
+        margin-top: 0;
+    }
+    @media @mobile-L{
+        width: 100%;
+        justify-content: center;
+        padding-left: 0;
+    }
+}
+
+.bio_subtitle{
+    font-size: 20px;
+    color: #7E76F9;
+
+
+    @media @mobile-L{
+        font-size: 16px;
+    }
+    @media @mobile-M{
+        font-size: 14px;
+    }
+}
+
+.bio_title{
+    font-size: 50px;
+    color: #42495B;
+    margin-bottom: 40px;
+
+
+    @media @laptop{
+        font-size: 35px;
+    }
+    @media @mobile-L{
+        font-size: 25px;
+        margin-bottom: 20px;
+    }
+    @media @mobile-M{
+        font-size: 18px;
+    }
+}
+
+.bio_text{
+    font-weight: 300;
+    font-size: 16px;
+    color: #7A839E;
+
+
+    @media @laptop{
+        font-size: 14px;
+    }
+    @media @mobile-M{
+        font-size: 12px;
+    }
+}
+
+.bio_btn{
+    margin-top: 40px;
+
+
+    @media @mobile-M{
+        margin-top: 20px;
+    }
+}

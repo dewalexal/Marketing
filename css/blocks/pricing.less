@@ -1,0 +1,151 @@
+// main: ../style.less
+
+.pricing{
+    padding-bottom: 150px;
+    background:rgba(126, 118, 249, 0.15);
+
+
+    @media @tablet{
+        padding-bottom: 90px;
+    }
+    @media @mobile-L{
+        padding-bottom: 60px;
+    }
+    @media @mobile-M{
+        padding-bottom: 40px;
+    }
+}
+.pricing_head{
+    padding-top: 40px;
+    padding-bottom: 65px;
+
+    text-align: center;
+
+
+    @media @tablet{
+        padding-bottom: 40px;
+    }
+    @media @mobile-L{
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+}
+
+.pricing_subtitle{
+    font-size: 20px;
+    color:@color-blue;
+
+
+    @media @tablet{
+        font-size: 18px;
+    }
+    @media @mobile-M{
+        font-size: 14px;
+    }
+}
+
+.pricing_title{
+    font-weight: 700;
+    font-size: 50px;
+
+
+    @media @tablet{
+        font-size: 40px;
+    }
+    @media @mobile-L{
+        font-size: 30px;
+    }
+    @media @mobile-M{
+        font-size: 25px;
+    }
+}
+
+.pricing_content{
+    display: flex;
+    justify-content: 33.3333%;
+
+
+    @media @mobile-L{
+        flex-wrap: wrap;
+    }
+}
+
+.price_item{
+    margin-right: 75px;
+    padding: 60px 10px;
+
+    text-align: center;
+    background: @color-white;
+    border-radius: 26px;
+
+
+    transition: box-shadow .2s linear;
+    &.price_item:last-child{
+        margin-right: 0;
+    }
+    &:hover{
+        box-shadow: 0px 10px 20px rgba(126, 118, 249, 0.5);
+    }
+    &:active{
+        box-shadow: 0px 10px 20px rgba(126, 118, 249, 0.8);
+    }
+
+
+    @media @laptop{
+        margin-right: 40px;
+    }
+    @media @tablet{
+        margin-right: 20px;
+    }
+    @media @mobile-L{
+        padding: 30px 7px;
+        margin: 10px;
+    }
+    @media @mobile-M{
+        padding: 20px 7px;
+    }
+}
+
+.price_title{
+    font-size: 28px;
+
+
+    @media @laptop{
+        font-size: 20px;
+    }
+}
+
+.price_text{
+    margin: 60px auto;
+    font-size: 16px;
+    font-weight: 300;
+
+
+    @media @laptop{
+        margin: 30px auto;
+        font-size: 14px;
+    }
+}
+
+.price{
+    margin-bottom: 40px;
+
+    font-size: 30px;
+    color: #1000FF;
+
+
+    @media @mobile-M{
+        margin-bottom: 30px;
+        font-size: 20px;
+    }
+}
+
+.price_btn_item{
+    text-align: center;
+    font-size: 16px;
+
+
+    @media @tablet{
+        font-size: 10px;
+    }
+}

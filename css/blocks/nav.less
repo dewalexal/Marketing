@@ -1,0 +1,43 @@
+// main: ../style.less
+
+.header_nav{
+
+    @media @mobile-L{
+        display: none;
+    }
+}
+
+.header_nav.fixed{
+    display: flex;
+
+
+    @media @mobile-M{
+        margin: 5px auto;
+        font-size: 12px;
+    }
+}
+
+.nav_link{
+    display: inline-block;
+    padding: 0 10px;
+    margin: 0 auto;
+
+    color:inherit;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    
+    transition: transform .3s linear;
+    &:hover{
+        transform: translateY(-5px);
+    }
+    &:active{
+        color:@color-white - #222;
+    } 
+
+
+    @media @laptop{
+        padding-right: 20px;
+    }
+}
