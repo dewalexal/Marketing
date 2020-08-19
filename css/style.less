@@ -2,12 +2,6 @@
 
 html{
     font-size: 16px;
-    background: url("../img/bg_top.svg") no-repeat 100% 0;
-
-
-    @media @tablet{
-        background-size: 95%;
-    }
 }
 
 body{
@@ -17,14 +11,18 @@ body{
     font-family: poppins;
     color: @color-gray;
     background-color: @color-white;
-    background: url("../img/test.svg") no-repeat 100% 100%;
+}
+
+.page{
+    background: url("../img/bg_top.svg") no-repeat 100% 0%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 
 
-    @media @mobile-L{
-        background-size: 800px;
-    }
-    @media @mobile-M{
-        background-size: 700px;
+    @media @mobile-L {
+        background: url("../img/bg_top.svg") no-repeat 10% 0%;
     }
 }
 
@@ -39,11 +37,22 @@ a{
     box-sizing: border-box;
 }
 
-p{
+p,ul{
     margin: 0;
     padding: 0;
 }
 
+h1, h2, h3, h4, h5, h6{
+    margin: 0;
+    padding: 0;
+}
+
+li{
+    list-style: none;
+    text-decoration: none;
+}
+
+@import "blocks/vars";
 @import "blocks/container";
 @import "blocks/header";
 @import "blocks/nav";
@@ -57,5 +66,4 @@ p{
 @import "blocks/pricing";
 @import "blocks/feedback";
 @import "blocks/footer";
-@import "blocks/table";
-@import "blocks/vars";
+@import "blocks/section";
